@@ -11,6 +11,7 @@ RUN apt-get update -y && \
     gdal-bin \
     postgis \
     curl \
+    gettext \
     && rm -rf /var/lib/apt/lists/*
 
 # Install nodejs 4.x
