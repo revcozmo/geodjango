@@ -10,9 +10,9 @@ ENV PYTHONUNBUFFERED 1
 # https://docs.djangoproject.com/ja/1.9/ref/contrib/gis/install/geolibs/
 # and extra needed packages
 
-RUN apt-get update && apt-get install -y --no-install-recommends apt-utils && \
-    apt-get update -y && \
+RUN apt-get update -y && \
     apt-get install --auto-remove -y \
+      apt-utils \
       binutils \
       libproj-dev \
       gdal-bin \
