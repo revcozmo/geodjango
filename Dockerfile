@@ -9,7 +9,9 @@ ENV PYTHONUNBUFFERED 1
 # Update and install packages recomended by Django documentation:
 # https://docs.djangoproject.com/ja/1.9/ref/contrib/gis/install/geolibs/
 # and extra needed packages
-RUN apt-get update -y && \
+
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils && \
+    apt-get update -y && \
     apt-get install --auto-remove -y \
       binutils \
       libproj-dev \
