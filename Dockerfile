@@ -1,5 +1,5 @@
 
-FROM python:3.6.3
+FROM python:3.6.3-stretch
 
 MAINTAINER Piter Oliveira Vergara <piter.vergara@code4fun.com.br>
 
